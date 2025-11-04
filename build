@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -euo pipefail
+
+# Or the freecad bin if installed directly
+FREECAD_CMD="flatpak run org.freecad.FreeCAD"
+
+$FREECAD_CMD --console export.py
+
